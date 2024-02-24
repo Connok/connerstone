@@ -1,4 +1,5 @@
 import "@/assets/styles/globals.css";
+import Navbar from "@/components/Navbar";
 
 export const metadata = {
   title: "Connerstone | Find The Perfect Rental",
@@ -9,7 +10,10 @@ export const metadata = {
 const MainLayout = ({ children }) => {
   return (
     <html lang="en">
-      <div>{children}</div>
+      <body>
+        <Navbar />
+        <main>{children}</main>
+      </body>
     </html>
   );
 };
